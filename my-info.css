@@ -1,0 +1,25 @@
+  .my-info {
+  		display: block !important;
+  		color: var(--placeholder);
+  		font-size: .8cm;
+  		font-style: italic;
+  		text-align: center;
+  		padding-top: 17.5cm;
+  		xbackground: rebeccapurple;
+  }
+  .my-info b {
+  		font-size: 1cm;
+  		letter-spacing: .7mm;
+  }
+  .my-info a {
+  		padding: 3px;
+  		text-decoration: none;
+  		color: var(--placeholder);
+  		opacity: .4;
+  }
+  .my-info a img {
+  		display: inline-block;
+  		height: 1cm;
+  		width: 1cm;
+  }
+  .my-info a:hover { opacity: 1; }

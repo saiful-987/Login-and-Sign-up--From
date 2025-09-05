@@ -1,0 +1,189 @@
+  :root {
+  		--color-1: #444;
+  		--color-2: coral;
+  		--placeholder: #fffa;
+  }
+  *{
+  		box-sizing: border-box;
+  		font-family: sans-serif;
+  }
+  body {
+  		margin: 0;
+  		padding: 0;
+  }
+  .login-page {
+  		width: calc(100vw - 2cm);
+  		min-width: 1000px;
+  		height: 750px;
+  		margin: 0 auto;
+  		margin-top: 1cm;
+  		background: cornflowerblue url('wall background.jpg');
+  		background-size: 100% 100%;
+  		border: 1px solid;
+  		border-radius: 2cm;
+  		position: relative;
+  }
+  .login-page .login-from {
+  		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		transform: translate(-50%, -50%); /* new */
+  		width: 12.5cm;
+  		height: 7cm;
+  		background-color: rgba(255, 255, 255, 10%);
+  		/* backdrop-filter: blur(10px); /* new */
+  		border: 2px solid var(--color-2);
+  		box-shadow: var(--color-2) 8px 8px 25px, var(--color-2) -8px -8px 25px;
+  		display: block;
+  		overflow: hidden;
+  		background: var(--color-1);
+  }
+  .login-from #login {
+  		display: block;
+  }
+  .login-from .login {
+  		/* background: var(--color-1); */
+  		display: grid;
+  		grid-template-columns: 6cm 6.6cm;
+  }
+  .login-from #register {
+  		display: none;
+  }
+  .login-from .register {
+  		/* background: var(--color-1); */
+  		display: grid;
+  		grid-template-columns: 6.5cm 6cm;
+  }
+  .login .part, .register .part {
+  		/* border: 2px solid; */
+  		min-width: 5cm;
+  		height: 7cm;
+  		display: inline-block;
+  		padding: 0 8mm;
+  		transition: transform 0.5s ease-in-out;
+  }
+  .part.p1 .login-title {
+  		color: #fff;
+  		font-size: 1.6em;
+  		text-align: center;
+  		margin-top: 8mm;
+  		margin-bottom: 3px;
+  }
+  .register .part.p1 .login-title {
+  		margin-top: 4mm;
+  		margin-bottom: 1px;
+  }
+  .part.p1 input {
+  		display: block;
+  		width: 100%;
+  		background: rgba(0, 0, 0, .0);
+  		border: 0;
+  		outline: none;
+  		border-bottom: 2px solid #ffff;
+  		padding: 4mm 0 1.3mm 0;
+  		margin-bottom: 3mm;
+  }
+  .register .part.p1 input {
+  		padding: 3mm 0 1.3mm 0;
+  }
+  .login .part.p1 .password-input input { margin-bottom: 1.5mm; }
+  .register .part.p1 .password-input input { margin-bottom: 4mm;}
+  .part.p1 input:hover {
+  		border-color: var(--color-2);
+  		transition-duration: .3s;
+  		cursor: text;
+  }
+  .part.p1 input::placeholder {
+  		color: var(--placeholder);
+  		text-transform: uppercase;
+  		letter-spacing: 2px;
+  		font-size: 10px;
+  }
+  .register .part.p1 input::placeholder {
+  		text-transform: capitalize;
+  		letter-spacing: 1px;
+  		opacity: .8;
+  }
+  .part.p1 input:hover::placeholder {
+  		color: var(--color-2);
+  		transform: translateY(-5mm);
+  		text-transform: capitalize;
+  		letter-spacing: 1px;
+  		opacity: .7;
+  		transition-duration: .3s;
+  }
+  .register .part.p1 input:hover::placeholder {
+  		text-transform: uppercase;
+  		letter-spacing: 2px;
+  }
+    .register .part.p1 input:hover::placeholder {
+    		transform: translateY(-4mm);
+    }
+  .part.p1 .forget-link {
+  		display: grid;
+  		grid-template-columns: 1fr auto;
+  		margin-bottom: 3mm;
+  }
+  .part.p1 .forget-link a {
+  		display: block;
+  		width: content-box;
+  		justify-self: end;
+  		text-decoration: none; 
+  		color: var(--placeholder);
+  		font-size: .6em;
+  		text-align: left;
+  }
+  .part.p1 .submit-button input {
+  		background: var(--color-2);
+  		padding: 1.5mm;
+  		border: 1px solid var(--color-2);
+  		border-radius: 1cm;
+  		color: white;
+  		box-shadow: inset var(--color-1) 0px -3mm 20px;
+  		transition-duration: .3s;
+  }
+  .part.p1 .submit-button input:hover {
+  		box-shadow: inset #000c 0px 3mm 20px;
+  		font-weight: 500;
+  		transition-duration: .3s;
+  }
+  .part.p1 .continuewith-label {
+  		color: #fff;
+  		font-size: .6em;
+  		text-align: center;
+  }
+  .part.p1 .continuewith-label a {
+  		text-decoration: none;
+  		color: var(--color-2);
+  		font-size: 1em;
+  		display: inline-block;
+  		padding-top: .8mm;
+  }
+  
+  /* login & register .part.p2 */
+  .login .part.p2 {
+  		padding: 1.7cm 5mm 0 2.6cm;
+  		text-align: right;
+  		font-size: 3mm;
+  		line-height: 1.5rm;
+  		letter-spacing: .5px;
+  		color: white;
+  }
+  .login .part.p2 a, .register .part.p2 a {
+  		text-decoration: none;
+  		color: white;
+  		font-size: 3.5mm;
+  }
+  .login .part.p2 h1, .register .part.p2 h1 {
+  		font-size: 5.8mm;
+  		margin: 0;
+  }
+  .register .part.p2 {
+  		padding: 2cm 2.4cm 0 5mm;
+  		text-align: left;
+  		font-size: 3mm;
+  		line-height: 1.5rm;
+  		letter-spacing: .5px;
+  		color: white;
+  }
+  

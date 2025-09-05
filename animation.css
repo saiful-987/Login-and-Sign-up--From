@@ -1,0 +1,104 @@
+  /* For all animation */
+  #backgroundDiv {
+  		display: block;
+  		height: 10cm;
+  		width: 22.5cm;
+  		position: absolute;
+  		transform: translateY(-25%) translateX(07%) rotate(50deg);
+    bottom: -2.4cm;
+  		left: 0; /*/
+  		transform: translateY(-25%) translateX(-07%) rotate(-50deg);
+  		bottom: -2.4cm;
+    left: -10cm;	*/
+  		transition: 2s ease;
+  		z-index: -1;
+  		overflow: visible;
+  		background: var(--color-2);
+  		box-shadow: var(--color-1) inset 1px -1cm 30cm;
+  		border: 2px solid var(--color-2);
+  		overflow: hidden;
+  }
+  .bg {
+  		height: 100%;
+  		width: 150%;
+  		position: absolute;
+  		bottom: -2.4cm;
+  		margin: 0;
+  		padding: 0;
+  		background-color: #0f05;
+  		border: 2px solid #fff;
+  		opacity: .5;
+  		box-shadow: var(--color-1) inset 1px -1cm 4cm;
+  }
+  .bg-1 {
+    left: -10cm;
+  		transform: translateY(-25%) translateX(-15%) rotate(-55deg);
+  }
+  .bg-2 {
+  		left: 0;
+  		transform: translateY(-25%) translateX(15%) rotate(55deg);
+  }
+  
+ /* login (in) */
+  @keyframes slideIn-1 {
+		  0% {
+		  		transform: translateX(-100%) rotate(0deg);
+		  		opacity: 0;
+		  }
+  		50% { opacity: .4; }
+  		80% { opacity: 1; }
+    100% {
+  	  	transform: translateX(0%) rotate(0deg);
+    		opacity: 1;
+    }
+  }
+  .slide-in-1 {
+  		animation: slideIn-1 1s ease-in-out forwards;
+  		/* animation-delay: .5s; */
+  }
+  /* login (out) */
+  @keyframes slideOut-1 {
+    0% {
+    		transform: translateX(0%);
+    		opacity: 0;
+    }
+		  100% {
+		  		transform: translateX(-110%);
+		  		opacity: 0;
+		  }
+  }
+  .slide-out-1 {
+  		animation: slideOut-1 0s linear forwards;
+  }
+  
+  /* sign up (in) */
+  @keyframes slideIn-2 {
+    0% {
+    		transform: translateX(110%) rotate(0deg);
+    		opacity: 0;
+    }
+  		50% { opacity: .4; }
+  		80% { opacity: 1;b}
+    100% {
+  	  	transform: translateX(0%) rotate(0deg);
+    		opacity: 1;
+    }
+  }
+  .slide-in-2 {
+  		animation: slideIn-2 1s ease-in-out forwards;
+  		/* animation-delay: .5s; */
+  }
+  /* sign up  (out) */
+  @keyframes slideOut-2 {
+    0% {
+    		transform: translateX(0%);
+    		opacity: 0;
+    }
+		  100% {
+		  		transform: translateX(110%);
+		  		opacity: 0;
+		  }
+  }
+  .slide-out-2 {
+  		animation: slideOut-2 0s linear forwards;
+  }
